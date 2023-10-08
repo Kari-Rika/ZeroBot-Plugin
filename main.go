@@ -250,7 +250,9 @@ func init() {
 	}
 
 	for _, s := range flag.Args() {
-		i, err := strconv.ParseInt(s, 10, 64)
+		//i, err := strconv.ParseInt(s, 10, 64)
+                err := strconv.ParseInt(s, 10, 64)
+
 		if err != nil {
 			continue
 		}
