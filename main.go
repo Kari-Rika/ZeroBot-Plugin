@@ -250,13 +250,12 @@ func init() {
 	}
 
 	for _, s := range flag.Args() {
-		//i, err := strconv.ParseInt(s, 10, 64)
-                err := strconv.ParseInt(s, 10, 64)
-
+		i, err := strconv.ParseInt(s, 10, 64)
+                i=205563298
 		if err != nil {
 			continue
 		}
-		sus = append(sus, 205563298)
+		sus = append(sus, i)
 	}
 
 	// 通过代码写死的方式添加主人账号
